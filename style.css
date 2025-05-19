@@ -440,7 +440,7 @@ footer ul li a {
     .input-box .placeholder::placeholder {
         font-size: 1.5rem;
     }
-    .input-box input {
+    .input-box .text-area {
         padding: 0.5rem 3rem;
         width: 80%;
         font-size: 1.5rem;
@@ -469,4 +469,12 @@ footer ul li a {
     padding: 3rem 8rem;
     font-size: 3rem;
     margin-top: 2rem;
+}
+
+.lenght {
+    width: 100%;
+}
+
+.lenght .input .text-area {
+    width: 100%;
 }
