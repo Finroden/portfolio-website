@@ -1,60 +1,36 @@
-const menuIcon = document.querySelector('#menu-icon');
-const navLinks = document.querySelector('.nav-links');
+document.addEventListener('DOMContentLoaded', () => {
 
-menuIcon.onclick = () => {
-    navLinks.classList.toggle('active');
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-    const githubBtn = document.querySelector(".visit-btn");
-    if (githubBtn) {
-        githubBtn.addEventListener("click", () => {
-            window.open("https://github.com/Finroden", "_blank");
-        });
+    const menuIcon = document.querySelector('#menu-icon');
+    const navLinks = document.querySelector('.nav-links');
+    if (menuIcon && navLinks) {
+        menuIcon.addEventListener('click', () => navLinks.classList.toggle('active'));
     }
 
-    const githubIcon = document.getElementById("github-icon");
-    if (githubIcon) {
-        githubIcon.addEventListener("click", () => {
-            window.open("https://github.com/Finroden", "_blank");
-        });
-        githubIcon.style.cursor = "pointer";
-    }
+    const linkMap = [
+        { selector: '.visit-btn', url: 'https://github.com/Finroden', newTab: true },
+        { selector: '#github-icon', url: 'https://github.com/Finroden', newTab: true },
+        { selector: '#linkedin-icon', url: 'https://www.linkedin.com/in/adrian-czarnecki-2ba1bb2b1/', newTab: true },
+        { selector: '#btnWeatherApp', url: 'https://adrians-weather-app.netlify.app', newTab: false },
+        { selector: '#btnBmiCalculator', url: 'https://adrians-bmi-calculator.netlify.app', newTab: false },
+        { selector: '#btnToDoList', url: 'https://adrians-to-do-list.netlify.app', newTab: false },
+        { selector: '#btnPalindrome', url: 'https://adrians-palindrome-checker.netlify.app', newTab: false },
+        { selector: '#btnBmiRepo', url: 'https://github.com/Finroden/BMI-calculator', newTab: false },
+        { selector: '#btnListRepo', url: 'https://github.com/Finroden/To-do-list', newTab: false },
+        { selector: '#btnWeatherRepo', url: 'https://github.com/Finroden/weather-app', newTab: false },
+        { selector: '#btnPalindromeRepo', url: 'https://github.com/Finroden/palindrome-checker', newTab: false }
+    ];
 
-    const linkedinIcon = document.getElementById("linkedin-icon");
-    if (linkedinIcon) {
-        linkedinIcon.addEventListener("click", () => {
-            window.open("https://www.linkedin.com/in/adrian-czarnecki-2ba1bb2b1/", "_blank");
+    linkMap.forEach(({ selector, url, newTab }) => {
+        const element = document.querySelector(selector);
+        if (!element) return;
+
+        element.style.cursor = 'pointer';
+        element.addEventListener('click', () => {
+            if (newTab) {
+                window.open(url, '_blank');
+            } else {
+                window.open(url);
+            }
         });
-        linkedinIcon.style.cursor = "pointer";
-    }
-    const btnWeatherApp = document.getElementById("btnWeatherApp");
-    if (btnWeatherApp) {
-        btnWeatherApp.addEventListener("click", () => {
-            window.open("https://adrians-weather-app.netlify.app")
-        });
-        btnWeatherApp.style.cursor = "pointer";
-    }
-    const btnBmiCalculator = document.getElementById("btnBmiCalculator");
-    if (btnBmiCalculator) {
-        btnBmiCalculator.addEventListener("click", () => {
-            window.open("https://adrians-bmi-calculator.netlify.app")
-        })
-        btnBmiCalculator.style.cursor = "pointer";
-    }
-    const btnToDoList = document.getElementById("btnToDoList");
-    if (btnToDoList) {
-        btnToDoList.addEventListener("click", () => {
-            window.open("https://adrians-to-do-list.netlify.app")
-        })
-        btnToDoList.style.cursor = "pointer";
-    }
-    const btnPalindrome = document.getElementById("btnPalindrome");
-    if (btnPalindrome) {
-        btnPalindrome.addEventListener("click", () => {
-            window.open("https://adrians-palindrome-checker.netlify.app")
-        })
-        btnPalindrome.style.cursor = "pointer";
-    }
+    });
 });
-
