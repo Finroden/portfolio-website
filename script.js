@@ -28,5 +28,33 @@ document.addEventListener("DOMContentLoaded", () => {
         });
         linkedinIcon.style.cursor = "pointer";
     }
+    const btnWeatherApp = document.getElementById("btnWeatherApp");
+    if (btnWeatherApp) {
+        btnWeatherApp.addEventListener("click", () => {
+            window.open("https://adrians-weather-app.netlify.app")
+        });
+        btnWeatherApp.style.cursor = "pointer";
+    }
+    const btnBmiCalculator = document.getElementById("btnBmiCalculator");
+    if (btnBmiCalculator) {
+        btnBmiCalculator.addEventListener("click", () => {
+            window.open("https://adrians-bmi-calculator.netlify.app")
+        })
+        btnBmiCalculator.style.cursor = "pointer";
+    }
+    const btnToDoList = document.getElementById("btnToDoList");
+    if (btnToDoList) {
+        btnToDoList.addEventListener("click", () => {
+            window.open("https://adrians-to-do-list.netlify.app")
+        })
+        btnToDoList.style.cursor = "pointer";
+    }
+    const btnPalindrome = document.getElementById("btnPalindrome");
+    if (btnPalindrome) {
+        btnPalindrome.addEventListener("click", () => {
+            window.open("https://adrians-palindrome-checker.netlify.app")
+        })
+        btnPalindrome.style.cursor = "pointer";
+    }
 });
 
