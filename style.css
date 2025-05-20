@@ -450,7 +450,59 @@ footer ul li a {
     }
 }
 
-
+@media (max-width: 400px) {
+    header #menu-icon {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        margin-top: 1rem;
+        width: 100%;
+        padding: 1rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.95);
+        border-radius: 2rem;
+        display: none;
+    }
+    .nav-links li {
+        margin-top: 1rem;
+        padding: 0.75rem;
+    }
+    .nav-links.active {
+        display: block;
+    }
+    header {
+        padding: 1rem 2rem;
+        gap: 4rem;
+    }
+    header .logo {
+        font-size: 1.2rem;
+    }
+    .about-container img {
+        width: 90vw;
+    }
+    .input-box input {
+        padding: 0.5rem 2rem;
+        width: 90%;
+        font-size: 1.2rem;
+    }
+    .input-box input::placeholder {
+        font-size: 1.2rem;
+    }
+    .input-box .text-area {
+        padding: 0.5rem 2rem;
+        width: 90%;
+        font-size: 1.2rem;
+    }
+    footer ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
 
 .contact .input-box .btn {
     border-radius: 3rem;
