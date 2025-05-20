@@ -507,8 +507,8 @@ footer ul li a {
     footer ul {
         gap: 1rem;
     }
-    .section-title {
-        font-size: 1rem;
+    .technologies {
+        width: 75%;
     }
 }
 
