@@ -450,6 +450,8 @@ footer ul li a {
     }
 }
 
+
+
 .contact .input-box .btn {
     border-radius: 3rem;
     padding: 2rem 3.5rem;
@@ -477,4 +479,9 @@ footer ul li a {
 
 .lenght .input .text-area {
     width: 100%;
+}
+
+a  {
+    text-decoration: none;
+    color: inherit;
 }

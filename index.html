@@ -6,159 +6,122 @@
     <title>Portfolio website</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
-    <link rel = "icon" type = "image/png" href = "portfolioIcon.png"/>
+    <link rel="icon" type="image/png" href="portfolioIcon.png"/>
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="logo"><span>Adrian Czarnecki</span></a>
-        <ul class="nav-links">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#technologies">Technologies</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-        <i class="fa-solid fa-bars"  id="menu-icon"></i>
-        <button class="visit-btn">Visit Github</button>
-    </header>
-    <section id="about"  class="about">
-        <div class="about-container">
-            <img src="image.jpg" alt=""/>
-            <div class="info-box">
-                <div class="text">
-                    <h3>Hi, my name is</h3>
-                    <h1>Adrian Czarnecki</h1>
-                    <span>Web Developer</span>
-                </div>
-                <div class="btn-group">
-                    <div class="btn">Download CV</div>
-                    <a href="#contact" class="btn">Contact</a>
-                </div>
-                <div class="socials">
-                    <i class="fa-brands fa-github" id="github-icon"></i>
-                    <i class="fa-brands fa-linkedin" id="linkedin-icon"></i>
-                </div>
+<header class="header">
+    <a href="#" class="logo"><span>Adrian Czarnecki</span></a>
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#technologies">Technologies</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <i class="fa-solid fa-bars" id="menu-icon"></i>
+    <a href="https://github.com/Finroden" class="visit-btn" target="_blank" rel="noopener noreferrer">Visit Github</a>
+</header>
+<section id="about" class="about">
+    <div class="about-container">
+        <img src="image.jpg" alt=""/>
+        <div class="info-box">
+            <div class="text">
+                <h3>Hi, my name is</h3>
+                <h1>Adrian Czarnecki</h1>
+                <span>Web Developer</span>
+            </div>
+            <div class="btn-group">
+                <a href="cv.pdf" class="btn" target="_blank" rel="noopener noreferrer">Download CV</a>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+            <div class="socials">
+                <a href="https://github.com/Finroden" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/adrian-czarnecki-2ba1bb2b1/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
             </div>
         </div>
-    </section>
-    <section id="projects" class="projects">
-        <h2 class="section-title">Recent Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <img src="project-1.png" alt=""/>
-                <h3>BMI Calculator</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut
-                </p>
-                <div class="btn-group">
-                    <div class="btn" id="btnBmiCalculator">Live Demo</div>
-                    <div class="btn" id="btnBmiRepo">Github Repo</div>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="project-2.png" alt=""/>
-                <h3>To-do List</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut
-                </p>
-                <div class="btn-group">
-                    <div class="btn" id="btnToDoList">Live Demo</div>
-                    <div class="btn" id="btnListRepo">Github Repo</div>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="project-3.png" alt=""/>
-                <h3>Weather App</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut
-                </p>
-                <div class="btn-group">
-                    <div class="btn" id="btnWeatherApp">Live Demo</div>
-                    <div class="btn" id="btnWeatherRepo">Github Repo</div>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="project-4.png" alt=""/>
-                <h3>Palindrome Checker</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut
-                </p>
-                <div class="btn-group">
-                    <div class="btn" id="btnPalindrome">Live Demo</div>
-                    <div class="btn" id="btnPalindromeRepo">Github Repo</div>
-                </div>
+    </div>
+</section>
+<section id="projects" class="projects">
+    <h2 class="section-title">Recent Projects</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <img src="project-1.png" alt=""/>
+            <h3>BMI Calculator</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+            <div class="btn-group">
+                <a href="https://adrians-bmi-calculator.netlify.app" class="btn" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a href="https://github.com/Finroden/BMI-calculator" class="btn" target="_blank" rel="noopener noreferrer">Github Repo</a>
             </div>
         </div>
-    </section>
-    <section id="technologies" class="technologies">
-        <h2 class="section-title">Technologies</h2>
-        <div class="tech-icons">
-            <div class="tech-item">
-                <i class="fab fa-html5"></i><span>HTML</span>
-            </div>
-            <div class="tech-item">
-                <i class="fab fa-css3-alt"></i><span>CSS</span>
-            </div>
-            <div class="tech-item">
-                <i class="fab fa-js"></i><span>JavaScript</span>
-            </div>
-            <div class="tech-item">
-                <i class="fab fa-python"></i><span>Python</span>
-            </div>
-            <div class="tech-item">
-                <i class="fab fa-git-alt"></i><span>Git</span>
-            </div>
-            <div class="tech-item">
-                <i class="fab fa-github"></i><span>GitHub</span>
+        <div class="project-card">
+            <img src="project-2.png" alt=""/>
+            <h3>To-do List</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+            <div class="btn-group">
+                <a href="https://adrians-to-do-list.netlify.app" class="btn" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a href="https://github.com/Finroden/To-do-list" class="btn" target="_blank" rel="noopener noreferrer">Github Repo</a>
             </div>
         </div>
-    </section>
-    <section id="contact" class="contact">
-        <div class="input-box">
-            <h2 class="section-title">Contact Me</h2>
-            <form action="https://formspree.io/f/mpwdkqaq" method="POST" class="contact-form">
-                <div class="lenght">
+        <div class="project-card">
+            <img src="project-3.png" alt=""/>
+            <h3>Weather App</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+            <div class="btn-group">
+                <a href="https://adrians-weather-app.netlify.app" class="btn" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a href="https://github.com/Finroden/Weather-App" class="btn" target="_blank" rel="noopener noreferrer">Github Repo</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="project-4.png" alt=""/>
+            <h3>Palindrome Checker</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+            <div class="btn-group">
+                <a href="https://adrians-palindrome-checker.netlify.app" class="btn" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a href="https://github.com/Finroden/Palindrome-checker" class="btn" target="_blank" rel="noopener noreferrer">Github Repo</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="technologies" class="technologies">
+    <h2 class="section-title">Technologies</h2>
+    <div class="tech-icons">
+        <div class="tech-item"><i class="fab fa-html5"></i><span>HTML</span></div>
+        <div class="tech-item"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
+        <div class="tech-item"><i class="fab fa-js"></i><span>JavaScript</span></div>
+        <div class="tech-item"><i class="fab fa-python"></i><span>Python</span></div>
+        <div class="tech-item"><i class="fab fa-git-alt"></i><span>Git</span></div>
+        <div class="tech-item"><i class="fab fa-github"></i><span>GitHub</span></div>
+    </div>
+</section>
+<section id="contact" class="contact">
+    <div class="input-box">
+        <h2 class="section-title">Contact Me</h2>
+        <form action="https://formspree.io/f/mpwdkqaq" method="POST" class="contact-form">
+            <div class="lenght">
                 <div class="input">
                     <input type="email" name="email" placeholder="example@email.com" required />
                     <i class="fa-solid fa-envelope"></i>
                 </div>
                 <div class="text-area">
-                    <textarea  class="placeholder" name="message" placeholder="Your message" required></textarea>
+                    <textarea class="placeholder" name="message" placeholder="Your message" required></textarea>
                 </div>
-                </div>
-                <button class="btn" type="submit">Submit</button>
-            </form>
-
-        </div>
-    </section>
-    <footer>
-        <ul>
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#technologies">Technologies</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-        <p class="copyright">© All Rights Reserved | Adrian Czarnecki</p>
-    </footer>
-    <script src="script.js"></script>
+            </div>
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+<footer>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#technologies">Technologies</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <p class="copyright">© All Rights Reserved | Adrian Czarnecki</p>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
