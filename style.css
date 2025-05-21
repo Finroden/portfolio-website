@@ -206,7 +206,7 @@ section {
 }
 
 .project-card img {
-    width: 20vw;
+    width: 100%;
     border-radius: 1rem;
 }
 
@@ -409,7 +409,6 @@ footer ul li a {
         width: 100%;
         padding: 1rem;
         color: white;
-        display: flex;
         flex-direction: column;
         text-align: center;
         background: rgba(0, 0, 0, 0.9);
@@ -475,15 +474,14 @@ footer ul li a {
     margin-top: 2rem;
 }
 
-.lenght {
+.length {
     width: 100%;
 }
 
-.lenght .input .text-area {
+.length .input .text-area {
     width: 100%;
 }
 
 a  {
-    text-decoration: none;
     color: inherit;
 }
