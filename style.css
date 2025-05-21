@@ -10,6 +10,8 @@ body, html {
     text-decoration: none;
     scroll-behavior: smooth;
     list-style: none;
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 header {
