@@ -10,6 +10,8 @@ body, html {
     text-decoration: none;
     scroll-behavior: smooth;
     list-style: none;
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 header {
@@ -206,7 +208,7 @@ section {
 }
 
 .project-card img {
-    width: 20vw;
+    width: 100%;
     border-radius: 1rem;
 }
 
@@ -332,6 +334,14 @@ footer ul li a {
     margin-top: 2rem;
 }
 
+@media (max-width: 5920px) {
+    .input-box .placeholder {
+        padding: 2rem 5rem;
+        font-size: 2.5rem;
+        width: 100%;
+    }
+}
+
 @media (max-width: 1280px) {
     header{
         padding: 1rem 2rem;
@@ -347,6 +357,7 @@ footer ul li a {
     .input-box .placeholder {
         padding: 2rem 5rem;
         font-size: 2.5rem;
+        width: 100%;
     }
     .input input::placeholder {
         font-size: 2.5rem;
@@ -409,7 +420,6 @@ footer ul li a {
         width: 100%;
         padding: 1rem;
         color: white;
-        display: flex;
         flex-direction: column;
         text-align: center;
         background: rgba(0, 0, 0, 0.9);
@@ -444,7 +454,7 @@ footer ul li a {
     .input-box .placeholder::placeholder {
         font-size: 1.5rem;
     }
-    .input-box .text-area {
+    .input-box .placeholder {
         padding: 0.5rem 3rem;
         width: 80%;
         font-size: 1.5rem;
@@ -475,15 +485,22 @@ footer ul li a {
     margin-top: 2rem;
 }
 
-.lenght {
+.length {
     width: 100%;
 }
 
-.lenght .input .text-area {
+.length .input .text-area {
     width: 100%;
 }
 
 a  {
-    text-decoration: none;
+
     color: inherit;
+}
+
+.main-img {
+    max-width: 500px;
+    max-height: 700px;
+    width: auto;
+    height: auto;
 }
