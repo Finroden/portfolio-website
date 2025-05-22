@@ -504,3 +504,8 @@ a  {
     width: auto;
     height: auto;
 }
+
+.about .about-container img {
+    max-height: 700%;
+    max-width: 500%;
+}
