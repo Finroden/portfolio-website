@@ -462,10 +462,6 @@ footer ul li a {
     footer ul {
         gap: 1rem;
     }
-    .about .about-container img{
-        height: 200px;
-        width: 150px;
-    }
 }
 
 .contact .input-box .btn {
