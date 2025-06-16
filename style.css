@@ -94,7 +94,7 @@ li a:hover::before {
 
 section {
     min-height: 100vh;
-    padding: 8rem 12%;
+    padding: 2rem 12%;
     width: 100%;
     position: relative;
 }
@@ -106,15 +106,15 @@ section {
 }
 
 .about .about-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
 }
 
 .about img {
-        width: 25vw;
-        border-radius: 50%;
+    width: 25vw;
+    border-radius: 50%;
 }
 
 .info-box {
@@ -160,7 +160,6 @@ section {
     color: black;
 }
 
-
 .btn:hover {
     background-color: black;
     color: white;
@@ -204,7 +203,7 @@ section {
 .project-card:hover {
     background-color: black;
     color: white;
-    transform: translateY(-10px)scale(1.02);
+    transform: translateY(-10px) scale(1.02);
 }
 
 .project-card img {
@@ -212,7 +211,7 @@ section {
     border-radius: 1rem;
 }
 
-.project-card:hover .btn{
+.project-card:hover .btn {
     border: 2px solid white;
     color: white;
 }
@@ -232,7 +231,7 @@ section {
     text-align: center;
     font-size: 4rem;
     font-weight: 600;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 .technologies {
@@ -305,7 +304,6 @@ section {
     transform: translate(50%, -50%);
 }
 
-
 footer {
     bottom: 0;
     left: 0;
@@ -343,7 +341,7 @@ footer ul li a {
 }
 
 @media (max-width: 1280px) {
-    header{
+    header {
         padding: 1rem 2rem;
         gap: 2rem;
     }
@@ -365,10 +363,9 @@ footer ul li a {
     .input .placeholder::placeholder {
         font-size: 2.5rem;
     }
-    .input-box i{
+    .input-box i {
         font-size: 2.5rem;
     }
-
 }
 
 @media (max-width: 768px) {
@@ -403,10 +400,8 @@ footer ul li a {
         display: none;
     }
     .grid {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
-
-
 }
 
 @media (max-width: 600px) {
@@ -426,21 +421,21 @@ footer ul li a {
         border-radius: 3rem;
         display: none;
     }
-    .nav-links li{
+    .nav-links li {
         margin-top: 1.5rem;
         padding: 1rem;
     }
     .nav-links.active {
         display: block;
     }
-    header{
+    header {
         padding: 1rem 5rem;
         gap: 8rem;
     }
     header .logo {
         font-size: 1.5rem;
     }
-    .about-container img{
+    .about-container img {
         width: 80vw;
     }
     .input-box input {
@@ -493,8 +488,7 @@ footer ul li a {
     width: 100%;
 }
 
-a  {
-
+a {
     color: inherit;
 }
 
