@@ -437,8 +437,6 @@ footer ul li a {
     }
     .about-container img {
         width: 80vw;
-        max-width: 120px;
-        max-height: 154px;
     }
     .input-box input {
         padding: 0.5rem 3rem;
